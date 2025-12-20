@@ -80,19 +80,9 @@
     }
 
     .botao-calculadora {
-        position: fixed;
-        bottom: 12px !important;
-        left: 12px !important;
-        right: 20px !important;
         background: var(--verde);
         color: white;
-        padding: 6px 10px !important;
-        font-size: 12px !important;
-        border-radius: 50px !important;
-        border: none;
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        z-index: 1000;
+        margin-top: 20px;
     }
 </style>
 </head>
@@ -194,7 +184,7 @@
 
     // ATIVANDO PWA
     if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("sw.js");
+        navigator.serviceWorker.register("service-worker.js");
     }
 </script>
 
