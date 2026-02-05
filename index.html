@@ -125,6 +125,7 @@
         aditivada: { pix: 6.49, debito: 6.69 },
         diesel:   { pix: 5.72, debito: 5.99 },
         alcool:   { pix: 5.70, debito: 5.90 }
+        disel &10:   { pix: 5.70, debito: 5.90 }
     };
 
     function selecionarProduto(tipo) {
@@ -160,6 +161,7 @@
             produto === "aditivada" ? "Gasolina Aditivada" :
             produto === "diesel" ? "Diesel S10" : 
             "Álcool";
+            produto === "diesel" ? "Diesel S10"
 
         const nomePagamento = pagamento === "pix" ? "Pix" : "Débito";
 
